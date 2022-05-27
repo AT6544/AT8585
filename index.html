@@ -23,7 +23,7 @@
         }
 
         footer {
-            
+
             padding: 120px 30px 50px 70px;
             color: #fff;
             background-color: #000;
@@ -34,30 +34,31 @@
 
 
         }
+
         /* 카피제외 */
         .Contaner {
-            
+
             display: flex;
             flex-direction: row;
 
         }
 
         .country {
-            
+
             display: flex;
             flex-direction: column;
             width: 50%;
             border-bottom: 1px solid rgba(128, 128, 128, 0.5);
             line-height: 40px;
-            
-            
+
+
         }
 
 
         .menu1 {
             margin-left: 30px;
             line-height: 25px;
-            opacity: none;
+            
             display: flex;
             flex-direction: column;
             line-height: 40px;
@@ -77,15 +78,28 @@
             line-height: 40px;
             border-bottom: 1px solid grey;
         }
-
-        .Copyright {
+        
+        .copyright {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             font-size: small;
             height: 100px;
-            
         }
+
+        .copyright div:first-of-type {
+            visibility: hidden;
+        }
+        .go:hover {
+            opacity:0.5;
+         }
+
+        .menu1opacity:hover {
+            opacity: 0.5;
+        }
+         
+        
     </style>
 
 </head>
@@ -94,27 +108,27 @@
     <footer>
         <div class="Contaner">
             <div class="country">
-                <a href="#"><img src="us.png" alt="image text" width="22" height="22">&nbsp;&nbsp;United States</a>
-                <a href="#">Change language or region</a>
-
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3909/3909383.png" alt="image text" width="20" height="20">&nbsp;&nbsp;United States</a>
+                <a href="#" style="text-decoration:underline;text-underline-position: under;" class="go">Change language or region</a>
             </div>
+            
 
             <ul class="menu1">
 
-                <li><a href="#">Vacuum cleaners</a></li>
-                <li><a href="#">Hair care</a></li>
-                <li><a href="#">Fans and Heaters</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Dyson Outlet</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Dyson Demo Stor</a></li>
-                <li><a href="#">Warranty Terms</a></li>
-                <li><a href="#">Repairs and servicing information</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Newsroom</a></li>
-                <li><a href="#">California Transparency Declaration</a></li>
-                <li><a href="#">Company Information</a></li>
-                <li><a href="#">Counterfeit Machines</a></li>
+                <li><a href="#"class="menu1opacity">Vacuum cleaners</a></li>
+                <li><a href="#"class="menu1opacity">Hair care</a></li>
+                <li><a href="#"class="menu1opacity">Fans and Heaters</a></li>
+                <li><a href="#"class="menu1opacity">Support</a></li>
+                <li><a href="#"class="menu1opacity">Dyson Outlet</a></li>
+                <li><a href="#"class="menu1opacity">Contact us</a></li>
+                <li><a href="#"class="menu1opacity">Dyson Demo Stor</a></li>
+                <li><a href="#"class="menu1opacity">Warranty Terms</a></li>
+                <li><a href="#"class="menu1opacity">Repairs and servicing information</a></li>
+                <li><a href="#"class="menu1opacity">Careers</a></li>
+                <li><a href="#"class="menu1opacity">Newsroom</a></li>
+                <li><a href="#"class="menu1opacity">California Transparency Declaration</a></li>
+                <li><a href="#"class="menu1opacity">Company Information</a></li>
+                <li><a href="#"class="menu1opacity">Counterfeit Machines</a></li>
 
             </ul>
 
@@ -136,10 +150,16 @@
                 <li><a href="#">James Dyson Biography</a></li>
                 <li><a href="#">James Dyson Book: Invention a Life</a></li>
             </ul>
+
         </div>
 
-        <div class="Copyright">
+        <div class="copyright">
+            <div class="one">
             &nbsp;&copy; Dyson 2022 &nbsp;
+        </div>
+            <div class="two">
+            &nbsp;&copy; Dyson 2022 &nbsp;
+            </div>
         </div>
 
     </footer>
